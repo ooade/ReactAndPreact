@@ -1,0 +1,48 @@
+html, body {
+	background: #222;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+form {
+	background: #EEE;
+	padding: 10px;
+	border-bottom: 3px solid #333;
+}
+
+ul {
+	min-height: 100px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	list-style: none;
+
+	li {
+		padding: 10px;
+		background: #FFF;
+		border-bottom: 1px solid #EEE;
+
+		&:nth-child(2n) {
+			background: #EEF6FF;
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+p, .profile {
+	text-align: center;
+	padding: 10px;
+}
+
+.mdl-card {
+	margin: auto;
+	transition: all .3s;
+	transform: translateY(100px);
+}

@@ -14,7 +14,7 @@ const ENV = process.env.NODE_ENV || 'development';
 module.exports = {
 	entry: {
 		app: './src/index.js',
-		vendor: ['react', 'react-router' , 'redux', 'react-mdl']
+		vendor: ['react', 'react-router', 'redux', 'react-mdl']
 	},
 
 	output: {

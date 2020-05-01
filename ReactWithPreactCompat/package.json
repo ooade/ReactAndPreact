@@ -9,7 +9,9 @@
     "build": "cross-env NODE_ENV=production webpack -p --progress",
     "prebuild": "rm -rf build mkdirp build",
     "test": "eslint src tests/**/*.js",
-    "push-surge": "npm run build && surge ./build -d reactk-app.surge.sh"
+    "push-surge": "npm run build && surge ./build -d reactk-app.surge.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "keywords": [
     "react",
@@ -66,6 +68,8 @@
     "react-redux": "^5.0.2",
     "react-router": "^3.0.0",
     "react-router-redux": "^4.0.7",
-    "redux": "^3.6.0"
-  }
+    "redux": "^3.6.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }

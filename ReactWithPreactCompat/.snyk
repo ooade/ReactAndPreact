@@ -5,4 +5,4 @@ ignore: {}
 patch:
   SNYK-JS-LODASH-567746:
     - redux > lodash:
-        patched: '2022-10-06T21:26:52.894Z'
+        patched: '2022-10-06T21:27:29.525Z'
